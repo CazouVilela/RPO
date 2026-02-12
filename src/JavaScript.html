@@ -1,0 +1,18 @@
+<script>
+  (function() {
+    var navBtns = document.querySelectorAll('.nav-btn');
+    var views = document.querySelectorAll('.view');
+
+    navBtns.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var target = btn.getAttribute('data-view');
+
+        navBtns.forEach(function(b) { b.classList.remove('active'); });
+        views.forEach(function(v) { v.classList.remove('active'); });
+
+        btn.classList.add('active');
+        document.getElementById('view-' + target).classList.add('active');
+      });
+    });
+  })();
+</script>

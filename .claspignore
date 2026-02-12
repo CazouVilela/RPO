@@ -1,0 +1,7 @@
+.git/**
+.gitignore
+.claude/**
+documentacao/**
+terminal_logs/**
+README.md
+node_modules/**

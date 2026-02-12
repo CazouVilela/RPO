@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base target="_top">
+  <?!= include('StyleSheet'); ?>
+</head>
+<body>
+  <nav class="nav-bar">
+    <button class="nav-btn active" data-view="home">Home</button>
+    <button class="nav-btn" data-view="detalhes">Detalhes</button>
+    <button class="nav-btn" data-view="config">Config</button>
+  </nav>
+
+  <div id="view-home" class="view active">
+    <div class="card">
+      <h2>Home</h2>
+      <p>Painel principal do RPO.</p>
+    </div>
+  </div>
+
+  <div id="view-detalhes" class="view">
+    <div class="card">
+      <h2>Detalhes</h2>
+      <p>Visualizacao detalhada.</p>
+    </div>
+  </div>
+
+  <div id="view-config" class="view">
+    <div class="card">
+      <h2>Configuracoes</h2>
+      <p>Ajustes e preferencias.</p>
+    </div>
+  </div>
+
+  <?!= include('JavaScript'); ?>
+</body>
+</html>
