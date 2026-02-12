@@ -1,6 +1,6 @@
 function onOpen(e) {
   SpreadsheetApp.getUi()
-    .createMenu('RPO')
+    .createAddonMenu()
     .addItem('Abrir Sidebar', 'showSidebar')
     .addToUi();
 }
