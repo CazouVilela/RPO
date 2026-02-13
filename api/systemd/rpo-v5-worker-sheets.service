@@ -1,0 +1,18 @@
+[Unit]
+Description=RPO V5 Worker Sheets - PostgreSQL to Google Sheets Sync
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=cazouvilela
+WorkingDirectory=/home/cazouvilela/projetos/RPO/api
+ExecStart=/usr/bin/node worker_sheets_sync.js
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+Environment=NODE_ENV=production
+
+[Install]
+WantedBy=multi-user.target

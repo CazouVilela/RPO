@@ -9,3 +9,8 @@ __pycache__/
 dist/
 build/
 terminal_logs/
+
+# API
+api/node_modules/
+api/.env
+api/logs/

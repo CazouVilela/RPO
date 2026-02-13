@@ -1,0 +1,36 @@
+{
+  "name": "rpo-v5-api",
+  "version": "1.0.0",
+  "description": "API REST RPO V5 - PostgreSQL + Valkey com config_sheet dinamica",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "worker": "node worker.js",
+    "worker:sheets": "node worker_sheets_sync.js",
+    "setup": "node setup.js",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "keywords": ["rpo", "v5", "historico", "postgresql", "valkey", "api"],
+  "author": "RPO Team",
+  "license": "MIT",
+  "dependencies": {
+    "compression": "^1.8.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-rate-limit": "^8.2.1",
+    "express-validator": "^7.3.0",
+    "googleapis": "^140.0.1",
+    "ioredis": "^5.3.2",
+    "pg": "^8.11.3",
+    "pg-format": "^1.0.4",
+    "winston": "^3.18.3",
+    "winston-daily-rotate-file": "^5.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.0.2"
+  }
+}

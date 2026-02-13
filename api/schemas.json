@@ -1,0 +1,13 @@
+{
+  "schemas": [
+    {
+      "name": "RPO_template_v5",
+      "spreadsheetId": "1v6MbkDS3afXBkTM1wIF8abf5sm85PHdx4CXyAxovX6Q",
+      "sheetHistoricoVagas": "Historico vagas",
+      "sheetHistoricoCandidatos": "Historico candidatos",
+      "active": true
+    }
+  ],
+  "autoDetect": true,
+  "comment": "Schemas are auto-configured during setup. Worker auto-detects and removes inactive schemas."
+}

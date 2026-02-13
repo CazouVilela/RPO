@@ -1,0 +1,45 @@
+/**
+ * Constantes HTTP - RPO V5
+ */
+
+const HTTP_STATUS = {
+  OK: 200,
+  CREATED: 201,
+  NO_CONTENT: 204,
+  BAD_REQUEST: 400,
+  UNAUTHORIZED: 401,
+  FORBIDDEN: 403,
+  NOT_FOUND: 404,
+  CONFLICT: 409,
+  UNPROCESSABLE_ENTITY: 422,
+  INTERNAL_ERROR: 500,
+  SERVICE_UNAVAILABLE: 503
+};
+
+const HTTP_METHODS = {
+  GET: 'GET',
+  POST: 'POST',
+  PATCH: 'PATCH',
+  PUT: 'PUT',
+  DELETE: 'DELETE'
+};
+
+const HTTP_HEADERS = {
+  CONTENT_TYPE: 'Content-Type',
+  AUTHORIZATION: 'Authorization',
+  X_SCHEMA: 'X-Schema',
+  CONTENT_TYPE_JSON: 'application/json'
+};
+
+const RESPONSE_SOURCES = {
+  VALKEY: 'valkey',
+  POSTGRESQL: 'postgresql',
+  FALLBACK: 'fallback'
+};
+
+module.exports = {
+  HTTP_STATUS,
+  HTTP_METHODS,
+  HTTP_HEADERS,
+  RESPONSE_SOURCES
+};

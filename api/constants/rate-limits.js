@@ -1,0 +1,30 @@
+/**
+ * Constantes de Rate Limiting - RPO V5
+ */
+
+const RATE_LIMITS = {
+  GENERAL: 800,
+  WRITE: 300,
+  READ: 500,
+  SETUP: 50,
+  WINDOW_ONE_MINUTE: 60 * 1000,
+  WINDOW_ONE_HOUR: 60 * 60 * 1000
+};
+
+const BATCH_SIZES = {
+  VALKEY_OPERATIONS: 1000,
+  SYNC_OPERATIONS: 100,
+  DEFAULT: 50
+};
+
+const RETRY_CONFIG = {
+  MAX_ATTEMPTS: 3,
+  DELAY_MS: 500,
+  BACKOFF_MULTIPLIER: 2
+};
+
+module.exports = {
+  RATE_LIMITS,
+  BATCH_SIZES,
+  RETRY_CONFIG
+};
